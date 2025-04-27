@@ -1,0 +1,42 @@
+body {
+     h1{text-align: center;}
+     p1{text-align: center;}
+     font-family: Arial, sans-serif;
+     background-image: url("../rawr/flower.jpg");
+     background-color: azure;
+     background-repeat: no-repeat;
+     margin: 50px;
+     
+    }
+ li a {
+    display: block;
+    width: 60px;
+}
+ form {
+     max-width: 300px;
+     margin: 0 auto;
+    }
+ label {
+     display: block;
+     margin-bottom: 15px;
+    }
+ input {
+     width: 100%;
+     padding: 8px;
+     margin-bottom: 10px;
+    }
+ button {
+     float: left;
+     padding: 15px 20px;
+     background-color: lightgray;
+     
+     border: 2px solid lightblue;   
+     border-radius: 5px;
+     cursor: pointer;
+     
+    }
+ button:hover {
+     background-color: palevioletred;
+     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+     opacity: 0.6;
+    }
