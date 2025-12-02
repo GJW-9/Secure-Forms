@@ -5,6 +5,7 @@ body {
      background-image: url("../rawr/flower.jpg");
      background-color: azure;
      background-repeat: no-repeat;
+     background-position: right-bottom;
      margin: 50px;
      
     }
@@ -26,7 +27,7 @@ body {
      margin-bottom: 10px;
     }
  button {
-     float: left;
+    
      padding: 15px 20px;
      background-color: lightgray;
      
@@ -39,4 +40,5 @@ body {
      background-color: palevioletred;
      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
      opacity: 0.6;
+     float: right;
     }
