@@ -1,0 +1,159 @@
+body{
+   background-color: #f5f2ff;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-size: medium;
+   color: #15181c;
+   margin: 0%;
+   padding: 16px;
+}
+h1{
+    font-size: 48px;
+    text-align: left;
+    
+    border-bottom: #15181c 4.5px solid ;
+    padding-left: 12px;
+    margin: 0 0 20px;
+
+}
+h2{
+    font-size: 18px;
+    text-align: justify;
+    margin: 52px 0 28px;
+    font-weight: 320px;
+}
+.logo {
+    top: 5px;
+    height: 68px;
+    width: 72px;
+    position: absolute;
+    right: 12px;
+    vertical-align: middle;
+}
+
+
+.layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    height: calc(100vh-220px);
+    min-height: 460px;
+}
+
+.left{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    min-height: 0;
+}
+.panel{
+    border: 2px solid #15181c;
+    border-radius: 12px;
+    padding: 32px;
+
+}
+
+#upload-form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+}
+input,textarea{
+    font: inherit;
+    padding: 18px;
+    border: 1px #15181c solid;
+    background: #d5d5d7;
+    border-radius: 8px;
+}
+.actions{
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+
+}
+
+button{
+    font: inherit;
+    cursor: pointer;
+    border-radius: 12px;
+    border: solid 1.5px #15181c;
+    padding: 12px 20px;
+    background: #faf7f0;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 5px;
+
+}
+button.hover{
+    color: #faf7f0;
+    background: #d5d5d7;
+}
+
+.list-panel{
+    overflow: auto;
+
+}
+#list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 8px;
+    display: grid;
+
+}
+#list button{
+    text-align: left;
+    width: 100%;
+
+}
+#list button[aria-current="true"]{
+    color: #faf7f0;
+    background: #15181c;
+}
+
+
+.notice{
+    font-family: inherit;
+    margin: 0 0 8px;
+    
+    padding: 10px;
+    border-radius: 8px;
+   
+    border: solid 1.5px #15181c;
+
+}
+.notice a{
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+}
+input:disabled, textarea:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.meta, .empty, #message{
+    font-family: inherit;
+    color: #555;
+    margin: 0 0 12px;
+
+}
+
+.nav-buttons{
+    margin-top: 16px ;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    align-items: center;
+    
+}
+
+@media(max-width:720px){
+    .layout{
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+}
+main[inert], nav[inert]{
+    opacity: 0.5;
+}

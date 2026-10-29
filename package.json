@@ -1,0 +1,15 @@
+{
+    "name": "Secure-Forms",
+    "version": "1.0.0",
+    "main": "savarr.js",
+    "scripts": {"start": "node.savarr.js"},
+    "dependencies": {
+        "bcryptjs": "3.0.3",
+        "better-sqlite3": "13.0.3",
+        "express": "5.3.0",
+        "multer": "2.5.0"
+       
+    }
+    
+
+}
